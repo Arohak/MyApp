@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'carrierwave'
 gem "mini_magick"
+gem "will_paginate"
+gem "bootstrap-will_paginate"
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.11'
