@@ -5,13 +5,17 @@
     <%= form_for(@recipe, html: {multiport: true}) do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name %>
+      
       <%= f.label :summary %>
       <%= f.text_field :summary %>
+      
       <%= f.label :description %>
       <%= f.text_area :description, rows: 10 %>
+      
       <span class="picture">
         <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
       </span>
+      
       <%= f.submit @recipe.new_record? ? "Create Recipe" : "Update Recipe", class: "btn btn-success" %>
     <% end %>
   </div>
