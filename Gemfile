@@ -16,6 +16,7 @@ gem "will_paginate"
 gem "bootstrap-will_paginate"
 gem 'bcrypt', '~> 3.1.7'
 gem 'fog', '~> 1.23.0'
+gem 'net-ssh'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.11'
