@@ -15,6 +15,7 @@ gem "mini_magick"
 gem "will_paginate"
 gem "bootstrap-will_paginate"
 gem 'bcrypt', '~> 3.1.7'
+gem 'fog', '~> 1.23.0'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.11'
