@@ -17,6 +17,9 @@ gem "bootstrap-will_paginate"
 gem 'bcrypt', '~> 3.1.7'
 gem 'fog', '~> 1.36.0'
 
+gem 'responders'
+gem 'doorkeeper'
+
 group :development, :test do
   gem 'sqlite3', '~> 1.3.11'
   gem 'pry'

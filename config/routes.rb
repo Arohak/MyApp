@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  use_doorkeeper
   root 'pages#home'
   get '/home', to: 'pages#home'
   
@@ -15,5 +16,11 @@ Rails.application.routes.draw do
   get '/login', to: 'logins#new'
   post '/login', to: 'logins#create'
   get '/logout', to: 'logins#destroy'
+  
+  namespace :api do
+    namespace :v1 do
+      resources :recipes
+    end
+  end
   
 end
